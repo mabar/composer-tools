@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php declare(strict_types = 1);
+
+use Mabar\ComposerTools\RecreateComposerJson;
+use Tracy\Debugger;
+
+require __DIR__ . '/../vendor/autoload.php';
+
+Debugger::$productionMode = false;
+Debugger::$strictMode = true;
+Debugger::enable();
+
+return (new RecreateComposerJson())
+	->run();

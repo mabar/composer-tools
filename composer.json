@@ -1,0 +1,45 @@
+{
+    "name": "mabar/composer-tools",
+    "description": "Some useful composer tools",
+    "keywords": [
+        "composer",
+        "tools"
+    ],
+    "type": "library",
+    "license": "MPL-2.0",
+    "homepage": "https://github.com/mabar/composer-tools",
+    "authors": [
+        {
+            "name": "Marek Bartoš",
+            "homepage": "https://github.com/mabar"
+        }
+    ],
+    "require": {
+        "php": ">=7.4.0",
+        "nette/utils": "^3.1.0",
+        "orisai/exceptions": "^1.0.0",
+        "symfony/console": "^5.1.0",
+        "tracy/tracy": "^2.7.0"
+    },
+    "require-dev": {
+        "orisai/coding-standard": "^1.0.0",
+        "pepakriz/phpstan-exception-rules": "^0.10.0",
+        "phpstan/extension-installer": "^1.0.0",
+        "phpstan/phpstan": "^0.12.0",
+        "phpstan/phpstan-deprecation-rules": "^0.12.0",
+        "phpstan/phpstan-nette": "^0.12.0",
+        "phpstan/phpstan-phpunit": "^0.12.0",
+        "phpstan/phpstan-strict-rules": "^0.12.0",
+        "staabm/annotate-pull-request-from-checkstyle": "^1.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mabar\\ComposerTools\\": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}
